@@ -27,7 +27,7 @@ jobs:
         run: npm install --global npm@10
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build frontend
         run: npm run build
@@ -37,9 +37,10 @@ jobs:
         with:
           name: node-app
           path: |
-            .
-            !node_modules/**
-            !.git/**
+            dist/**
+            scripts/**
+            package.json
+            package-lock.json
 
   deploy:
     runs-on: ubuntu-latest
