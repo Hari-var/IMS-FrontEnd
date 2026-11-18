@@ -4,9 +4,11 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "dev:vite": "vite"
   },
   "dependencies": {
     "react": "^18.3.1",
