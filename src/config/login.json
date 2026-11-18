@@ -1,0 +1,30 @@
+{
+  "form": {
+    "title": "Login",
+    "inputs": [
+      {
+        "id": "email",
+        "type": "email",
+        "name": "email",
+        "placeholder": "Enter your email",
+        "label": "Email",
+        "required": true
+      },
+      {
+        "id": "password",
+        "type": "password",
+        "name": "password",
+        "placeholder": "Enter your password",
+        "label": "Password",
+        "required": true
+      }
+    ],
+    "button": {
+      "id": "login-btn",
+      "type": "submit",
+      "text": "Login",
+      "variant": "contained",
+      "color": "primary"
+    }
+  }
+}

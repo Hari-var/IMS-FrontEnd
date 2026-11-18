@@ -1,0 +1,110 @@
+{
+  "form": {
+    "title": "First Notice of Loss (FNOL)",
+    "description": "Please provide details about your claim",
+    "inputs": [
+      {
+        "id": "claimantName",
+        "type": "text",
+        "name": "claimantName",
+        "placeholder": "Enter your full name",
+        "label": "Claimant Name",
+        "required": true
+      },
+      {
+        "id": "policyNumber",
+        "type": "text",
+        "name": "policyNumber",
+        "placeholder": "e.g., POL-2026-001234",
+        "label": "Policy Number",
+        "required": true
+      },
+      {
+        "id": "email",
+        "type": "email",
+        "name": "email",
+        "placeholder": "your@email.com",
+        "label": "Email Address",
+        "required": true
+      },
+      {
+        "id": "phoneNumber",
+        "type": "tel",
+        "name": "phoneNumber",
+        "placeholder": "e.g., (555) 123-4567",
+        "label": "Phone Number",
+        "required": true
+      },
+      {
+        "id": "lossDate",
+        "type": "date",
+        "name": "lossDate",
+        "placeholder": "Select date",
+        "label": "Date of Loss",
+        "required": true
+      },
+      {
+        "id": "lossType",
+        "type": "select",
+        "name": "lossType",
+        "placeholder": "Select loss type",
+        "label": "Type of Loss",
+        "required": true,
+        "options": [
+          { "value": "theft", "label": "Theft" },
+          { "value": "fire", "label": "Fire" },
+          { "value": "accident", "label": "Accident" },
+          { "value": "flood", "label": "Flood" },
+          { "value": "vandalism", "label": "Vandalism" },
+          { "value": "other", "label": "Other" }
+        ]
+      },
+      {
+        "id": "lossDescription",
+        "type": "textarea",
+        "name": "lossDescription",
+        "placeholder": "Please describe what happened in detail...",
+        "label": "Description of Loss",
+        "required": true
+      },
+      {
+        "id": "estimatedAmount",
+        "type": "number",
+        "name": "estimatedAmount",
+        "placeholder": "e.g., 5000.00",
+        "label": "Estimated Loss Amount (USD)",
+        "required": true
+      },
+      {
+        "id": "witnesses",
+        "type": "text",
+        "name": "witnesses",
+        "placeholder": "Enter names and contact info",
+        "label": "Witnesses (if any)",
+        "required": false
+      },
+      {
+        "id": "incidentLocation",
+        "type": "text",
+        "name": "incidentLocation",
+        "placeholder": "Full address where loss occurred",
+        "label": "Incident Location",
+        "required": true
+      },
+      {
+        "id": "policeReport",
+        "type": "checkbox",
+        "name": "policeReport",
+        "label": "Police Report Filed",
+        "required": false
+      }
+    ],
+    "button": {
+      "id": "submit-fnol",
+      "type": "submit",
+      "text": "Submit Claim",
+      "variant": "contained",
+      "color": "primary"
+    }
+  }
+}
